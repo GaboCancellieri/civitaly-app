@@ -1,0 +1,182 @@
+@import "../../styles/breakpoints.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  @include small-smartphones {
+    .navbarIcons {
+      display: none;
+    }
+    .navBarLeft a {
+      display: none;
+    }
+    .navBarLeft {
+      min-width: fit-content;
+    }
+    .navBarRight {
+      min-width: 0px;
+    }
+  }
+
+  @include tablets {
+    .navbarIcons {
+      display: none;
+    }
+    .navBarRight {
+      min-width: 0px;
+    }
+    .navBarLeft a {
+      display: none;
+      min-width: 0px;
+    }
+    .navBarLeft {
+      min-width: fit-content;
+    }
+  }
+}
+
+.navBarLeft {
+  display: flex;
+  flex-direction: row;
+  min-width: 450px;
+  justify-content: space-between;
+}
+
+.navBarRight {
+  display: flex;
+  flex-direction: row;
+  min-width: 270px;
+  justify-content: space-between;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo span {
+  color: #333;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.navbarLogo img {
+  height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.navbarLinks li {
+  margin: 0 10px;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.navbarLinks a:hover {
+  color: #007bff;
+}
+
+.navbarIcons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.navbarIcons li {
+  margin: 0 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navbarIcons li:hover {
+  color: #007bff;
+}
+
+.navbarIcons {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbarProfileImage {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: -50%;
+  cursor: pointer;
+}
+
+.bottomNavBar {
+  display: none;
+margin:0;
+  @include small-smartphones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    li {
+      cursor: pointer;
+      font-size: 22px;
+      color: #333;
+      list-style-type: none;
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  @include tablets {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    li {
+      cursor: pointer;
+      font-size: 22px;
+      color: #333;
+      list-style-type: none;
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+}
