@@ -1,0 +1,88 @@
+@import "../../../styles/colors.scss";
+
+.button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+}
+
+.primary {
+  background-color: $darkBlue;
+  color: $white;
+}
+
+.primary:hover {
+  background-color: $darkerBlue;
+}
+
+.secondary {
+  background-color: $lighterBlue;
+  color: $darkBlue;
+}
+
+.secondary:hover {
+  background-color: $lightBlue;
+}
+
+.tertiary {
+  background-color: $lighterGrey;
+  color: $darkBlue;
+}
+
+.tertiary:hover {
+  background-color: $lightGrey;
+}
+
+.success {
+  background-color: $lightGreen;
+  color: $white;
+}
+
+.success:hover {
+  background-color: $darkGreen;
+}
+
+.danger {
+  background-color: $lightRed;
+  color: $white;
+}
+
+.danger:hover {
+  background-color: $red;
+}
+
+.warning {
+  background-color: $lightOrange;
+  color: $white;
+}
+
+.warning:hover {
+  background-color: $orange;
+}
+
+.info {
+  background-color: $lighterBlue;
+  color: $darkBlue;
+}
+
+.info:hover {
+  background-color: $lightBlue;
+}
+
+.small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.normal {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
