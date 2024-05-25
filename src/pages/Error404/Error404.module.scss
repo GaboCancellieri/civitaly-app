@@ -1,0 +1,15 @@
+.errorPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  .errorImage {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
