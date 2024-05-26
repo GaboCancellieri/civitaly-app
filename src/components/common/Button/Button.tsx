@@ -5,7 +5,7 @@ import styles from "./Button.module.scss";
 
 interface ButtonProps {
   children: ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
   type?: ButtonType;
   size?: ButtonSize;
   isDisabled?: boolean;

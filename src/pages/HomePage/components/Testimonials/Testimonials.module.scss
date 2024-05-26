@@ -1,0 +1,38 @@
+@import "../../../../styles/colors.scss";
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .testimonialCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .testimonialCard {
+      max-width: 400px;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba($black, 0.1);
+      background-color: $darkerBlue;
+      text-align: center;
+
+      .testimonialText {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .testimonialAuthor {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

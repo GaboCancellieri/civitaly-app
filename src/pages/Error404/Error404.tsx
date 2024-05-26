@@ -1,12 +1,12 @@
 import { FC } from "react";
 import styles from "./Error404.module.scss";
 import { Link } from "react-router-dom";
-import { Typography } from "../../components/common";
+import { Typography, Image } from "../../components/common";
 
 const Error404: FC = () => {
   return (
     <div className={styles.errorPageContainer}>
-      <img
+      <Image
         className={styles.errorImage}
         src="/img/404.png"
         alt="404 error image"

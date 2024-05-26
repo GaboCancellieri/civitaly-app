@@ -1,0 +1,33 @@
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-around;
+  margin: 3rem 0;
+  width: 100%;
+  max-width: 1000px;
+
+  .featureImage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: contain;
+      border-radius: 12px;
+    }
+  }
+
+  .featureText {
+    position: relative;
+    margin-top: 1rem;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

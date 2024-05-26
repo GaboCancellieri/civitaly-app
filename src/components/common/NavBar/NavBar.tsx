@@ -1,10 +1,10 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal"; // Ajusta la ruta según la ubicación de tu componente
-import { FaBell, FaUserPlus, FaEnvelope, FaSearch } from "react-icons/fa";
 import styles from "./navBar.module.scss";
 import userProfileImage from "../../../assets/images/user/userProfileImg.jpg";
 import logo from "../../../assets/images/NavBar/logoNavBar.png";
 import { ModalPosition } from "./types";
+import { Button, Icon, Typography, Image } from "..";
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
@@ -46,19 +46,31 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navBarLeft}>
         <div className={styles.navbarLogo}>
-          <img src={logo} alt="Logo" />
-          <span>Civitaly</span>
+          <Image src={logo} alt="Logo" />
+          <Typography variant="smallTitle">Civitaly</Typography>
         </div>
         <div>
           <ul className={styles.navbarLinks}>
             <li>
-              <a href="/home">Home</a>
+              <a href="#home">
+                <Button type="transparent">
+                  <Typography variant="buttonText">Home</Typography>
+                </Button>
+              </a>
             </li>
             <li>
-              <a href="/option2">Option2</a>
+              <a href="#features">
+                <Button type="transparent">
+                  <Typography variant="buttonText">Features</Typography>
+                </Button>
+              </a>
             </li>
             <li>
-              <a href="/option3">Option3</a>
+              <a href="#testimonials">
+                <Button type="transparent">
+                  <Typography variant="buttonText">Testimonials</Typography>
+                </Button>
+              </a>
             </li>
           </ul>
         </div>
@@ -76,7 +88,7 @@ const Navbar = () => {
               )
             }
           >
-            <FaSearch />
+            <Icon iconDesign="FontAwesome5" iconId="FaSearch" />
           </li>
           <li
             onClick={(event) =>
@@ -88,7 +100,7 @@ const Navbar = () => {
               )
             }
           >
-            <FaUserPlus />
+            <Icon iconDesign="FontAwesome5" iconId="FaUserPlus" />
           </li>
           <li
             onClick={(event) =>
@@ -100,7 +112,7 @@ const Navbar = () => {
               )
             }
           >
-            <FaEnvelope />
+            <Icon iconDesign="FontAwesome5" iconId="FaEnvelope" />
           </li>
           <li
             onClick={(event) =>
@@ -112,7 +124,7 @@ const Navbar = () => {
               )
             }
           >
-            <FaBell />
+            <Icon iconDesign="FontAwesome5" iconId="FaBell" />
           </li>
         </div>
         <li
@@ -128,7 +140,7 @@ const Navbar = () => {
             )
           }
         >
-          <img
+          <Image
             src={userProfileImage}
             alt="User"
             className={styles.navbarProfileImage}
@@ -137,16 +149,16 @@ const Navbar = () => {
       </div>
       <ul className={styles.bottomNavBar}>
         <li>
-          <FaSearch />
+          <Icon iconDesign="FontAwesome5" iconId="FaSearch" />
         </li>
         <li>
-          <FaUserPlus />
+          <Icon iconDesign="FontAwesome5" iconId="FaUserPlus" />
         </li>
         <li>
-          <FaEnvelope />
+          <Icon iconDesign="FontAwesome5" iconId="FaEnvelope" />
         </li>
         <li>
-          <FaBell />
+          <Icon iconDesign="FontAwesome5" iconId="FaBell" />
         </li>
       </ul>
       <Modal

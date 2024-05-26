@@ -1,14 +1,13 @@
-@import "../../styles/breakpoints.scss";
+@import "../../../styles/breakpoints.scss";
 
 .navbar {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 10px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  width: 100vw;
-  position: fixed;
+  padding: 10px 10px;
+  background-color: #ffffff00;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -65,7 +64,7 @@
 }
 
 .navbarLogo span {
-  color: #333;
+  color: #fff;
   font-size: 26px;
   font-weight: 400;
 }
@@ -90,7 +89,7 @@
 
 .navbarLinks a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   display: flex;
   align-items: center;
 }
@@ -118,7 +117,7 @@
 
 .navbarIcons {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .navbarProfileImage {
@@ -131,7 +130,7 @@
 
 .bottomNavBar {
   display: none;
-margin:0;
+  margin: 0;
   @include small-smartphones {
     display: flex;
     align-items: center;

@@ -1,18 +1,23 @@
-import React from "react";
+import { FC, ReactNode } from "react";
 import styles from "./Typography.module.scss";
 import classNames from "classnames";
 
 type TypographyProps = {
-  variant: "title" | "subtitle" | "text" | "caption";
-  children: React.ReactNode;
+  variant:
+    | "largeTitle"
+    | "title"
+    | "smallTitle"
+    | "subtitle"
+    | "text"
+    | "darkButtonText"
+    | "buttonText"
+    | "caption";
+  children: ReactNode;
   className?: string;
 };
 
-const Typography: React.FC<TypographyProps> = ({
-  variant,
-  children,
-  className,
-}) => {
+const Typography: FC<TypographyProps> = ({ variant, children, className }) => {
+  console.log({ className });
   return (
     <span className={classNames(styles.typography, styles[variant], className)}>
       {children}

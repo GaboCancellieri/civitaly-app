@@ -1,0 +1,39 @@
+$breakpoint-small-smartphones: 480px;
+$breakpoint-large-smartphones-tablets: 768px;
+$breakpoint-laptops-small-desktops: 1279px;
+$breakpoint-large-desktops: 1280px;
+
+// Mixin for smaller smartphones
+@mixin small-smartphones {
+  @media (max-width: #{$breakpoint-small-smartphones}) {
+    @content;
+  }
+}
+
+// Mixin for tablets and larger smartphones
+@mixin tablets {
+  @media (min-width: #{ $breakpoint-small-smartphones + 1 }) and (max-width: #{ $breakpoint-large-smartphones-tablets }) {
+    @content;
+  }
+}
+
+// Mixin for laptops, larger tablets in landscape, and small desktops
+@mixin laptops {
+  @media (min-width: #{ $breakpoint-large-smartphones-tablets + 1 }) and (max-width: #{ $breakpoint-laptops-small-desktops }) {
+    @content;
+  }
+}
+
+// Mixin for larger desktops and monitors
+@mixin desktop {
+  @media (min-width: #{ $breakpoint-large-desktops }) {
+    @content;
+  }
+}
+
+// Mixin for tablets and larger smartphones
+@mixin tablet-down {
+  @media (max-width: #{ $breakpoint-large-smartphones-tablets }) {
+    @content;
+  }
+}

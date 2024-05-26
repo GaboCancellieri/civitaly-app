@@ -1,0 +1,10 @@
+@import "../../styles/breakpoints.scss";
+
+.homepageContainer {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
