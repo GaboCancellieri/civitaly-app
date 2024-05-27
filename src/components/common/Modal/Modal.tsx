@@ -1,7 +1,7 @@
 
 import styles from './modal.module.scss';
 import React, { useEffect, useState } from 'react';
-
+import { Button,  Typography } from "..";
 
 interface ModalProps {
     isOpen: boolean;
@@ -36,14 +36,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onRequestClose, title, children, 
         <div className={styles.overlay} onClick={handleOverlayClick}>
             <div className={styles.modal} style={modalStyle}>
                 <div className={styles.modalHeader}>
-                    <h2>{title}</h2>
+                    <Typography variant='smallerTitle'>{title}</Typography>
                 </div>
                 <div className={styles.modalContent}>
                     {children}
                 </div>
                 {buttonTitle && (
                     <div className={styles.modalButton}>
-                        <button>{buttonTitle}</button>
+                        <Button type='secondary'><Typography variant="buttonText"> {buttonTitle}</Typography> </Button>
                     </div>
                 )}
             </div>
