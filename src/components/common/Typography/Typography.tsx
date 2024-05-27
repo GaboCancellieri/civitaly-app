@@ -7,6 +7,7 @@ type TypographyProps = {
     | "largeTitle"
     | "title"
     | "smallTitle"
+    | "smallerTitle"
     | "subtitle"
     | "text"
     | "darkButtonText"

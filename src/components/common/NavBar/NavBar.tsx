@@ -5,6 +5,7 @@ import userProfileImage from "../../../assets/images/user/userProfileImg.jpg";
 import logo from "../../../assets/images/NavBar/logoNavBar.png";
 import { ModalPosition } from "./types";
 import { Button, Icon, Typography, Image } from "..";
+ 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
@@ -29,10 +30,10 @@ const Navbar = () => {
   };
 
   const handleIconClick = (
-    title: string,
+    title: any,
     content: any,
     event: any,
-    buttonTitle?: string
+    buttonTitle?: any
   ) => {
     const iconRect = event.currentTarget.getBoundingClientRect();
     const position = {
@@ -55,7 +56,7 @@ const Navbar = () => {
               <li>
                 <a href="#home">
                   <Button type="transparent">
-                    <Typography variant="buttonText">Home</Typography>
+                    <Typography variant="buttonText"  >Home</Typography>
                   </Button>
                 </a>
               </li>
@@ -82,10 +83,12 @@ const Navbar = () => {
             <li
               onClick={(event) =>
                 handleIconClick(
-                  "Busqueda",
-                  <p>Componente de busqueda</p>,
+              "Search",
+                 <Typography variant="text">Search component </Typography>, 
                   event,
-                  "Ver más"
+             
+                 "View all"
+           
                 )
               }
             >
@@ -94,10 +97,12 @@ const Navbar = () => {
             <li
               onClick={(event) =>
                 handleIconClick(
-                  "Solicitudes de amistad",
-                  <p>Componente de solicitudes de amistad</p>,
+                  "Friend Requests",
+                  <Typography variant="text">Friend Requests component </Typography>,
                   event,
-                  "Ver más"
+               
+                  "View all"
+              
                 )
               }
             >
@@ -106,10 +111,11 @@ const Navbar = () => {
             <li
               onClick={(event) =>
                 handleIconClick(
-                  "Mensajes",
-                  <p>Componente de mensajes </p>,
+             'Messages',
+                  <Typography variant="text">Messages component </Typography>,
                   event,
-                  "Ver todos"
+                  "View all"
+             
                 )
               }
             >
@@ -118,10 +124,12 @@ const Navbar = () => {
             <li
               onClick={(event) =>
                 handleIconClick(
-                  "Notificaciones",
-                  <p>Componente de Notificaciones </p>,
+    'Notifications',
+                  <Typography variant="text">Notifications component </Typography>,
                   event,
-                  "Ver Todas"
+                
+                  "View all"
+           
                 )
               }
             >
