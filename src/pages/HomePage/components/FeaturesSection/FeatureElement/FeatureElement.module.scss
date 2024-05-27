@@ -1,3 +1,5 @@
+@import "../../../../../styles/breakpoints.scss";
+
 .feature {
   display: flex;
   flex-direction: row;
@@ -6,6 +8,11 @@
   margin: 3rem 0;
   width: 100%;
   max-width: 1000px;
+
+  @include tablet-down {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .featureImage {
     position: relative;

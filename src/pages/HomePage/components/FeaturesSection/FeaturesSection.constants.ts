@@ -4,7 +4,7 @@ export const FEATURE_ELEMENTS = [
     description: `Feel secure with our identity verification system that ensures
     you’re connecting with real people. Say goodbye to scammers and
     hello to genuine interactions.`,
-    imageUrl: "/img/feature1rdadwa.webp",
+    imageUrl: "/img/feature1.webp",
   },
   {
     title: "Real-Time Messaging",

@@ -34,13 +34,17 @@
 
     @include tablet-down {
       width: 200px;
+      top: 60%;
 
-      .title {
-        margin-bottom: 10px;
+      span.title {
+        font-size: 2rem;
       }
 
       .subtitle {
-        margin-bottom: 20px;
+        p {
+          font-size: 1rem;
+          margin-bottom: 20px;
+        }
       }
 
       .joinNowButton {

@@ -1,6 +1,7 @@
 :root {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: overlay;
   background-color: #031a32;
 
   font-synthesis: none;
