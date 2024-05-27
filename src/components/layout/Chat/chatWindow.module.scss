@@ -1,0 +1,133 @@
+@import "../../../styles/colors.scss";
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px); // -100px de la NavBar
+  border-left: 1px solid $darkBlue;
+  width: 100%;
+}
+
+.chatHeader {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: $darkBlue;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+ 
+ .chatInput span{
+ color :$white;
+cursor: pointer;
+font-size: 25px;
+margin: 5px 10px 0 10px;
+ }
+.friendInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.friendName {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.friendStatus {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.chatMessages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: $blackBlue;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.messageContainer.sent {
+  justify-content: flex-end;
+}
+
+.messageContainer.received {
+  justify-content: flex-start;
+}
+
+.chatMessage {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+ 
+}
+
+.sent .chatMessage {
+  background-color: $darkBlue;
+  align-self: flex-end;
+  margin-right: 10px;
+ 
+}
+.avatarHour{
+    display: flex;
+    flex-direction: column;
+}
+.received .chatMessage {
+  background-color: $lightBlue;
+  align-self: flex-start;
+}
+
+.messageText {
+  margin-bottom: 5px;
+}
+
+.messageTime {
+  font-size: 0.8em;
+  color: #999;
+   
+
+}
+
+.chatInput {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: $lightBlue;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.sendButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.noFriendSelected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #888;
+  font-size: 1.2em;
+}

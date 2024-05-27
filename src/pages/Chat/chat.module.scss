@@ -1,0 +1,36 @@
+@import '../../styles/breakpoints';  
+.chat{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+ 
+}
+
+.chat {
+    .sidebarToggleBtn {
+      display: none;
+  
+      @include tablets {
+        display: block; 
+      }
+      @include laptops {
+        display: block; 
+      }
+      @include small-smartphones {
+        display: block; 
+      }
+    }
+  }
+
+  .chat {
+    position: relative;
+  
+    .sidebarToggleBtn {
+      position: fixed;
+      bottom: 20px; 
+      right: 20px; 
+      z-index: 1000; 
+ 
+    }
+   
+  }
