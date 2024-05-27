@@ -13,6 +13,10 @@
   width: 100%;
   margin-top: 5rem;
 
+  @include tablet-down {
+    padding: 20px 0;
+  }
+
   .footerContent {
     display: flex;
     flex-direction: row;

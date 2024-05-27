@@ -50,7 +50,7 @@ const Navbar = () => {
             <Image src={logo} alt="Logo" />
             <Typography variant="smallTitle">Civitaly</Typography>
           </div>
-          <div>
+          <div className={styles.navbarLinksContainer}>
             <ul className={styles.navbarLinks}>
               <li>
                 <a href="#home">
@@ -76,7 +76,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.searchBar}>{/* ¿¿¿¿¿ searchBar ????*/}</div>
+        {/* <div className={styles.searchBar}>¿¿¿¿¿ searchBar ????</div> */}
         <div className={styles.navBarRight}>
           <div className={styles.navbarIcons}>
             <li
