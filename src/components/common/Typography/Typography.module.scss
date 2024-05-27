@@ -2,13 +2,31 @@
 @import "../../../styles/colors.scss";
 
 .typography {
+  &.largeTitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 1.2;
+    color: $white;
+    text-shadow: 4px 4px 10px $black;
+  }
+
   &.title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin: 0.5rem 0;
+    color: $lighterBlue;
+  }
+
+  &.smallTitle {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0.5rem 0;
-    color: $lighterBlue;
+    color: $white;
   }
 
   &.subtitle {
@@ -27,6 +45,26 @@
     line-height: 1.5;
     margin: 0.5rem 0;
     color: $white;
+  }
+
+  &.darkButtonText {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    color: $darkBlue;
+    text-transform: capitalize;
+  }
+
+  &.buttonText {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    color: $white;
+    text-transform: capitalize;
   }
 
   &.caption {

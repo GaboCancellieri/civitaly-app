@@ -86,3 +86,16 @@
   padding: 15px 30px;
   font-size: 20px;
 }
+
+.transparent {
+  background-color: transparent;
+  span {
+    transition: color 300ms ease-in-out;
+  }
+}
+
+.transparent:hover {
+  span {
+    color: $lightBlue !important;
+  }
+}

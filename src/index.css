@@ -1,8 +1,16 @@
 :root {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: overlay;
   background-color: #031a32;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+body {
+  margin: 0;
 }

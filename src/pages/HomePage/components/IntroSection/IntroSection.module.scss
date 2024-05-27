@@ -1,0 +1,56 @@
+@import "../../../../styles/breakpoints.scss";
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image {
+    @include tablet-down {
+      width: 768px;
+    }
+    object-fit: contain;
+  }
+
+  .mainText {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 300px;
+
+    .subtitle {
+      p {
+        margin-bottom: 50px;
+      }
+    }
+
+    .joinNowButton {
+      position: relative;
+      margin-top: 2rem;
+    }
+
+    @include tablet-down {
+      width: 200px;
+      top: 60%;
+
+      span.title {
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        p {
+          font-size: 1rem;
+          margin-bottom: 20px;
+        }
+      }
+
+      .joinNowButton {
+        position: relative;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

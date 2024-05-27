@@ -1,0 +1,70 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/breakpoints.scss";
+
+.footer {
+  background: linear-gradient(120deg, $blackBlue, $lighterBlue);
+  color: $white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem;
+
+  @include tablet-down {
+    padding: 20px 0;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+    max-width: 700px;
+
+    @include tablet-down {
+      flex-direction: column;
+    }
+
+    .footerLogo {
+      img {
+        margin-bottom: 10px;
+      }
+    }
+
+    .footerNav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 20px;
+
+      .footerLink {
+        color: $white;
+        text-decoration: none;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #ffa500; /* Civitaly Accent Orange */
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    margin-top: 20px;
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}

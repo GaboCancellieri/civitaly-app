@@ -1,14 +1,13 @@
-@import "../../styles/breakpoints.scss";
+@import "../../../styles/breakpoints.scss";
+@import "../../../styles/colors.scss";
 
 .navbar {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 10px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  width: 100vw;
-  position: fixed;
+  background-color: $transparent;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -45,18 +44,31 @@
   }
 }
 
+.navbarContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 10px;
+}
+
 .navBarLeft {
   display: flex;
   flex-direction: row;
   min-width: 450px;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .navBarRight {
   display: flex;
   flex-direction: row;
   min-width: 270px;
-  justify-content: space-between;
+  justify-content: flex-end;
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .navbarLogo {
@@ -65,15 +77,30 @@
 }
 
 .navbarLogo span {
-  color: #333;
+  color: $white;
   font-size: 26px;
   font-weight: 400;
+
+  @include small-smartphones {
+    display: none;
+  }
 }
 
 .navbarLogo img {
   height: 60px;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.navbarLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include small-smartphones {
+    display: none;
+  }
 }
 
 .navbarLinks {
@@ -90,13 +117,13 @@
 
 .navbarLinks a {
   text-decoration: none;
-  color: #333;
+  color: $white;
   display: flex;
   align-items: center;
 }
 
 .navbarLinks a:hover {
-  color: #007bff;
+  color: $lightBlue;
 }
 
 .navbarIcons {
@@ -113,30 +140,32 @@
 }
 
 .navbarIcons li:hover {
-  color: #007bff;
+  color: $lightBlue;
 }
 
 .navbarIcons {
   text-decoration: none;
-  color: #333;
+  color: $white;
 }
 
 .navbarProfileImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  margin-left: -50%;
   cursor: pointer;
 }
 
 .bottomNavBar {
   display: none;
-margin:0;
+  margin: 0;
   @include small-smartphones {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: $white;
     border-top: 1px solid #ddd;
     width: 100%;
     padding: 10px 0;
