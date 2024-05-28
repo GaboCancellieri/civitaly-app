@@ -20,7 +20,13 @@
         display: block; 
       }
     }
+    @media (max-width: 768px) {
+      .chatSidebar {
+        display: none;
+      }
+    }
   }
+ 
 
   .chat {
     position: relative;

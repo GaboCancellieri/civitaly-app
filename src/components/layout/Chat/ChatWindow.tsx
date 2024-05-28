@@ -20,6 +20,8 @@ interface ChatWindowProps {
   selectedFriend: Friend | null;
   messages: Message[];
   currentUserAvatar: string;
+  isMobileView: boolean; // Añadir esta línea
+  openSidebar: () => void; // Añadir esta línea
 }
 
 const ChatWindow: React.FC<ChatWindowProps> = ({ selectedFriend, messages, currentUserAvatar }) => {
@@ -61,7 +63,7 @@ const ChatWindow: React.FC<ChatWindowProps> = ({ selectedFriend, messages, curre
             <span><Icon iconDesign="FontAwesome5" iconId="FaSmileBeam" /></span> 
             <span><Icon iconDesign="FontAwesome5" iconId="FaMicrophone" /></span> 
             <input type="text" placeholder="Type your message" className={styles.input} />
-            <Button type='primary' >Send</Button>
+            <Button type='primary' ><Icon iconDesign="FontAwesome5" iconId="FaPaperPlane" /></Button>
           </div>
         </>
       ) : (
