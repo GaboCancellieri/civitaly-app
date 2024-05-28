@@ -6,7 +6,12 @@
   height: calc(100vh - 100px); // -100px de la NavBar
   border-left: 1px solid $darkBlue;
   width: 100%;
+  @media (max-width: 768px) {
+    width: 100%; 
+      height: calc(100vh - 150px); // -100px de la NavBar
+  }
 }
+
 
 .chatHeader {
   display: flex;
